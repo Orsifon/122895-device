@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>DEVICE</title>
+		<link rel="stylesheet" href="css/">
+	  <base href="https://htmlacademy-htmlcss.github.io/122895-device/3/">
+</head>
+	<body>
+<!--ШАПКА-->
+		<header class="main-header">
+			<a class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
+			<span class="search">Поиск по сайту</span>
+			<nav class="main-nav">
+				<span class="popular">
+					Каталог товаров
+				</span>
+				<ul class="popular-dropdown">
+					<li class="dropdown-item"><a href="#">Виртуальная реальность</a></li>
+					<li class="dropdown-item"><a href="#">Моноподы для селфи</a></li>
+					<li class="dropdown-item"><a href="#">Экшн-камеры</a></li>
+					<li class="dropdown-item"><a href="#">Фитнес-браслеты</a></li>
+					<li class="dropdown-item"><a href="#">Умные часы</a></li>
+					<li class="dropdown-item"><a href="#">Квадрокоптеры</a></li>
+				</ul>	
+				<ul class="site-nav">
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантии</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>	
+				<ul class="user-nav">
+					<li class="login-link"><a class="visually-hidden" href="#">Вход</a></li>
+					<li class="login-link"><a class="visually-hidden" href="#">Выход</a></li>
+					<li class="login-link"><a href="#">Сравнить</a></li>
+					<li class="login-link"><a href="#">Корзина</a></li>
+				</ul>
+			</nav>
+		</header>
+<!--КОНТЕНТ-->		
+		<main class="container">
+			<h1 class="visually-hidden">Моноподы для селфи</h1>
+<!--НАВИГАЦИЯ-->				
+			<section class="catalog-nav">
+				<h2 class="visually-hidden">Навигация по страницам</h2>
+				<nav class="catalog-nav-list">
+					<ul>
+						<li class="catalog-nav-link"><a href="index.html">Главная</a></li>
+						<li class="catalog-nav-link"><a href="index.html">Каталог товаров</a></li>
+						<li class="catalog-nav-link"><a href="#">Моноподы для селфи</a></li>
+					</ul>
+				</nav>
+			</section>
+<!--ФИЛЬТР-->	
+			<section class="filter">
+				<h2>Фильтр</h2>
+				<form class="filter-form" method="post">
+					<hr><h3>Стоимость</h3>
+					<div class="filter-price">
+						<!--????-->
+					</div>
+					<hr><h3>Цвет</h3>
+					<div class="filter-check">
+						<input type="checkbox" value="Черный" checked>
+						<input type="checkbox" value="Белый">
+						<input type="checkbox" value="Синий" checked>
+						<input type="checkbox" value="Красный" checked>
+						<input type="checkbox" value="Розовый">
+					</div>
+					<hr><h3>Bluetooth</h3>
+					<div class="filter-rad">
+						<input type="radio" value="Есть" checked>
+						<input type="radio" value="Нет">
+					</div>
+					<input class="line-feature" type="button" value="Показать">
+				</form>
+			</section>			
+<!--СОРТИРОВКА-->	
+			<section class="sort">
+				<h2>Сортировка:</h2>
+				<ul>
+					<li class="sort-item">По цене</li>
+					<li  class="sort-item">По типу</li>
+					<li  class="sort-item">По популярности</li>
+				</ul>
+				<button>Вверх</button>
+				<button>Вниз</button>
+			</section>
+<!--КАТАЛОГ ТОВАРОВ-->			
+			<section class="catalog-items">	
+				<h2 class="visually-hidden">Товары</h2>
+				<div>
+					<img src="img/amateur.jpg" width="200" height="200" alt="Любительская">
+					<a class="visually-hidden line-feature" href="#">В корзину</a>
+					<span class="visually-hidden compare">Добавить к сравнению</span>
+					<p>
+						Любительская селфи-палка
+					</p>
+					<p>
+						500 руб.
+					</p>
+				</div>
+				<div>
+					<img src="img/unsinkable.jpg" width="200" height="200" alt="Непотопляемая">
+					<a class="visually-hidden line-feature" href="#">В корзину</a>
+					<span class="visually-hidden compare">Добавить к сравнению</span>
+					<p>
+						Непотопляемая селфи-палка
+					</p>
+					<p>
+						2500 руб.
+					</p>
+				</div>
+				<div>
+					<img src="img/professional.jpg" width="200" height="200" alt="Профессиональная">
+					<a class="visually-hidden line-feature" href="#">В корзину</a>
+					<span class="visually-hidden compare">Добавить к сравнению</span>
+					<p>
+						Профессиональная селфи-палка
+					</p>
+					<p>
+						1500 руб.
+					</p>
+				</div>
+				<div>
+					<img src="img/followme.jpg" width="200" height="200" alt="Следуй за мной">
+					<a class="visually-hidden line-feature" href="#">В корзину</a>
+					<span class="visually-hidden compare">Добавить к сравнению</span>
+					<p>
+						Селфи-палка "Следуй за мной"
+					</p>
+					<p>
+						4900 руб.
+					</p>
+				</div>
+			</section>
+<!--СТРАНИЦЫ ТОВАРОВ-->			
+			<section class="pages-list">
+				<h2 class="visually-hidden">Страницы товаров</h2>
+				<nav class="pages-nav">
+					<button class="nav-control-prev" type="submit">Назад</button>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<button class="nav-control-next"  type="submit">Вперед</button>
+				</nav>
+			</section>			
+		</main>
+<!--ПОДВАЛ-->		
+		<footer class="maim-footer">
+			<h2 class="visually-hidden">Контактная информация</h2>
+			<a class="footer-logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>
+			<p>
+				г. Москва, ул. Строителей, 15
+			</p>	
+			<div class="footer-socials">
+				<ul>
+					<li class="footer-site-nav"><a href="#">Доставка</a></li>
+					<li class="footer-site-nav"><a href="#">Гарантии</a></li>
+					<li class="footer-site-nav"><a href="#">Контакты</a></li>
+				</ul>	
+				<ul>
+					<li><a class="social-button" href="#">Вконтакте</a></li>
+					<li><a class="social-button" href="#">Фейсбук</a></li>
+					<li><a class="social-button" href="#">Инстаграм</a></li>
+				</ul>
+    		</div>
+    		<ul class="footer-user-nav">
+					<li class="login-link"><a class="visually-hidden" href="#">Вход</a></li>
+					<li class="login-link"><a class="visually-hidden" href="#">Выход</a></li>
+					<li class="login-link"><a href="#">Сравнить</a></li>
+					<li class="login-link"><a href="#">Корзина</a></li>
+			</ul>
+    		<p class="footer-phone">
+				Тел: +7(495)495-95-95
+			</p>
+			<p class="footer-copyright">
+				<span class="logo-html">
+    				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    			</span>
+			</p>
+		</footer>
+	</body>
+</html>
