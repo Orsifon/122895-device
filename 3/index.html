@@ -10,19 +10,23 @@
 <!--ШАПКА-->
 		<header class="main-header">
 			<a class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
-			<span class="search">Поиск по сайту</span>
+			<div class="search">
+				<input type="text" name="search" placeholder="Поиск по сайту">
+				<button class="btn-search-hidden">Найти</button>
+			</div>
 			<nav class="main-nav">
-				<span class="popular">
-					Каталог товаров
-				</span>
-				<ul class="popular-dropdown">
-					<li class="dropdown-item"><a href="#">Виртуальная реальность</a></li>
-					<li class="dropdown-item"><a href="#">Моноподы для селфи</a></li>
-					<li class="dropdown-item"><a href="#">Экшн-камеры</a></li>
-					<li class="dropdown-item"><a href="#">Фитнес-браслеты</a></li>
-					<li class="dropdown-item"><a href="#">Умные часы</a></li>
-					<li class="dropdown-item"><a href="#">Квадрокоптеры</a></li>
-				</ul>	
+				<ul class="main-menu">
+					<li><a class="main-menu-goods">Каталог товаров</a>
+						<ul class="sub-menu">
+							<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
+							<li class="sub-menu-item"><a href="#2">Моноподы для селфи</a></li>
+							<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
+							<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
+							<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+							<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
+						</ul>	
+					</li>
+				</ul>
 				<ul class="site-nav">
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантии</a></li>
@@ -119,12 +123,12 @@
 			<section class="popular">
 				<h2 class="visually-hidden">Ассортимент</h2>
 				<ul class="popular-list">
-					<li class="popular-item"><a href="#">Виртуальная реальность</a></li>
-					<li class="popular-item"><a href="#">Моноподы для селфи</a></li>
-					<li class="popular-item"><a href="#">Экшн-камеры</a></li>
-					<li class="popular-item"><a href="#">Фитнес-браслеты</a></li>
-					<li class="popular-item"><a href="#">Умные часы</a></li>
-					<li class="popular-item"><a href="#">Квадрокоптеры</a></li>
+					<li class="popular-item background-image"><a href="#">Виртуальная реальность</a></li>
+					<li class="popular-item background-image"><a href="#">Моноподы для селфи</a></li>
+					<li class="popular-item background-image"><a href="#">Экшн-камеры</a></li>
+					<li class="popular-item background-image"><a href="#">Фитнес-браслеты</a></li>
+					<li class="popular-item background-image"><a href="#">Умные часы</a></li>
+					<li class="popular-item background-image"><a href="#">Квадрокоптеры</a></li>
 				</ul>
 			</section>
 <!--СЕРВИСЫ-->			
@@ -191,7 +195,7 @@
 					</div>
 					<div class="feedback-form-group">
 						<label for="message"><b>Текст письма:</b></label>
-						<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+						<textarea name="message" id="message" placeholder="В свободной форме" rows="10" cols="10"></textarea>
 					</div>
 					<input class="btn line-feature" type="submit"  value="Отправить">
 				</form>
@@ -203,7 +207,7 @@
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
 				<a class="map-btn" href="#"><img src="img/map.jpg" width="200" height="200" alt="Карта"></a>
-				<a class="line-feature">Подробнее о нас</a>	
+				<a class="line-feature">Напишите нам</a>	
 			</section>
 			<section class="map-popular">
 				<h2 class="visually-hidden">Карта</h2>
@@ -237,13 +241,11 @@
 					<li class="login-link"><a href="#">Сравнить</a></li>
 					<li class="login-link"><a href="#">Корзина</a></li>
 			</ul>
-    		<p class="footer-phone">
-				Тел: +7(495)495-95-95
-			</p>
+    		<p>Тел: +7(495)495-95-95</p>
 			<p class="footer-copyright">
-				<span class="logo-html">
-    				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-    			</span>
+				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+   					<span class="logo-html">HTML Academy</span>
+    			</a>
 			</p>
 		</footer>
 	</body>
