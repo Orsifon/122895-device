@@ -9,12 +9,12 @@
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a href="#" class="logo"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>	
+			<a href="#" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип"></a>	
 
 <!--ПОИСК_ВХОД-->			
 			<section class="user-nav-section">
 				<div class="search">
-					<input type="text" name="search" placeholder="Поиск по сайту">
+					<input type="search" name="search" placeholder="Поиск по сайту">
 					<button class="btn-search-hidden">Найти</button>
 				</div>
 				<div class="user-nav">
@@ -32,23 +32,20 @@
 <!--НАВИГАЦИЯ-->			
 			<section class="main-nav-section">			
 				<nav class="main-nav">
-					<div class="main-nav-holder">
-						<ul class="main-nav-menu">
-							<li><a class="menu-goods">Каталог товаров</a>
-								<ul class="sub-menu">
-									<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-									<li class="sub-menu-item"><a href="#2">Моноподы для селфи</a></li>
-									<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
-								</ul>	
-								<ul class="sub-menu">
-									<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
-									<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
-								</ul>
-								<ul class="sub-menu">
-									<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
-								</ul>	
-							</li>
-						</ul>
+					<div class="dropdown-menu">
+							<a class="menu-goods">Каталог товаров</a>
+							<ul class="sub-menu">
+								<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
+								<li class="sub-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
+								<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
+							</ul>	
+							<ul class="sub-menu">
+								<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
+								<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+							</ul>
+							<ul class="sub-menu">
+								<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
+							</ul>
 					</div>
 					<div class="main-nav-wrapper">
 						<div class="nav-delivery-safeguard">
@@ -71,14 +68,18 @@
 			<section class="main-slider-section">
 				<h2 class="visually-hidden">Популярные товары</h2>		
 				<div class="main-slider-box">
-					<div class="main-slider-radio">
-						<input type="radio" id="monopod">
-						<input type="radio" id="fitbracelet">
-						<input type="radio" id="quadrocopter">
-					</div>
-					<div class="slides slider-item" title="Монопод">	
+						<input type="radio" name="radio" id="monopod" checked>
+						<label for="monopod"></label>
+						
+						<input type="radio" name="radio" id="fitbracelet">
+						<label for="fitbracelet"></label>
+					
+						<input type="radio" name="radio" id="quadrocopter">
+						<label for="quadrocopter"></label>
+						
+					<div class="slider-item" title="Монопод">	
 						<div class="slider-image">
-							<img src="img/monopod.jpg" width="200" height="200" alt="Монопод">
+							<img src="img/slider-1.png" width="384" height="486" alt="Монопод">
 						</div>
 						<div class="slider-description">
 							<p class="lead">
@@ -90,130 +91,151 @@
 								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
 							<a href="#" class="line-feature">Подробнее</a>
-							<div class="slider-table-description">
-								<table>
-									<tr class="product">
-										<td>8,5 м</td>
-										<td>5 кг</td>
-										<td>Карбон</td>
-									</tr>
-									<tr class="description">
-										<td>Длина палки</td>
-										<td>Вес палки</td>
-										<td>Материал</td>
-									</tr>
-								</table>
-							</div>
+							<table class="slider-table-description">
+								<tr class="product">
+									<td>8,5 м</td>
+									<td>5 кг</td>
+									<td>Карбон</td>
+								</tr>
+								<tr class="description">
+									<td>Длина палки</td>
+									<td>Вес палки</td>
+									<td>Материал</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					
-					<div class="slides slider-item" title="Фитнес-браслет">	
+					<div class="slider-item" title="Фитнес-браслет">	
 						<div class="slider-image">
-								<img src="img/fitbracelet.jpg" width="200" height="200" alt="Фитнес-браслет">
-							</div>
-							<div class="slider-description">
-								<p class="lead">
-								Худеем<br>
-								правильно! 
-								</p>
-								<p>
-									Мотивирующие фитнес-браслеты помогут найти в себе силы 
-									не пропускать занятия и соблюдать диету.
-								</p>
-								<a href="#" class="line-feature">Подробнее</a>
-								<div class="slider-table-description">
-									<table>
-										<tr class="product">
-											<td>48 часов</td>
-										</tr>
-										<tr class="description">
-											<td>Без подзарядки</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						</div>				
+								<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+						</div>
+						<div class="slider-description">
+							<p class="lead">
+							Худеем<br>
+							правильно! 
+							</p>
+							<p>
+								Мотивирующие фитнес-браслеты помогут найти в себе силы 
+								не пропускать занятия и соблюдать диету.
+							</p>
+							<a href="#" class="line-feature">Подробнее</a>
+							<table class="slider-table-description">
+								<tr class="product">
+									<td>48 часов</td>
+								</tr>
+								<tr class="description">
+									<td>Без подзарядки</td>
+								</tr>
+							</table>
+						</div>
+					</div>				
 						 
-						<div class="slides slider-item" title="Квадрокоптер">	
-							<div class="slider-image">
-								<img src="img/quadrocopter.jpg" width="200" height="200" alt="Квадрокоптер">
-							</div>
-							<div class="slider-description">
-								<p class="lead">
-									Порхает как бабочка,<br>
-									жалит как пчела!
-								</p>
-								<p>
-									Этот обычный, на первый взгляд, квадрокоптер оснащен 
-									мощным лазером, замаскированным под стандартную камеру.
-								</p>
-								<a href="#" class="line-feature">Подробнее</a>
-								<div class="slider-table-description">
-									<table>
-										<tr class="product">
-											<td>800 м</td>
-											<td>50 м</td>
-										</tr>
-										<tr class="description">
-											<td>Дальность полета</td>
-											<td>Радиус поражения</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						</div>	
+					<div class="slider-item" title="Квадрокоптер">	
+						<div class="slider-image">
+							<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+						</div>
+						<div class="slider-description">
+							<p class="lead">
+								Порхает как бабочка,<br>
+								жалит как пчела!
+							</p>
+							<p>
+								Этот обычный, на первый взгляд, квадрокоптер оснащен 
+								мощным лазером, замаскированным под стандартную камеру.
+							</p>
+							<a href="#" class="line-feature">Подробнее</a>
+							<table class="slider-table-description">
+								<tr class="product">
+									<td>800 м</td>
+									<td>50 м</td>
+								</tr>
+								<tr class="description">
+									<td>Дальность полета</td>
+									<td>Радиус поражения</td>
+								</tr>
+							</table>
+						</div>
+					</div>	
 				</div>
 			</section>
 			
 <!--АССОРТИМЕНТ-->			
 			<section class="popular-section">
 				<h2 class="visually-hidden">Ассортимент</h2>
-				<ul class="popular-list">
-					<li class="popular-item background-image"><a href="#">Виртуальная реальность</a></li>
-					<li class="popular-item background-image"><a href="#">Моноподы для селфи</a></li>
-					<li class="popular-item background-image"><a href="#">Экшн-камеры</a></li>
-					<li class="popular-item background-image"><a href="#">Фитнес-браслеты</a></li>
-					<li class="popular-item background-image"><a href="#">Умные часы</a></li>
-					<li class="popular-item background-image"><a href="#">Квадрокоптеры</a></li>
-				</ul>
+				<div class="popular-list">
+					<div class="popular-item">
+						<a href="#">
+							<img src="img/" alt="Виртуальная реальность" width="200" height="200">
+							<p>Виртуальная реальность</p>
+						</a>
+					</div>
+					<div class="popular-item">
+						<a href="#">
+							<img src="img/" alt="Моноподы для селфи" width="200" height="200">
+							<p>Моноподы для селфи</p>
+						</a>
+					</div>
+					<div class="popular-item">
+						<a href="#">
+							<img src="img/" alt="Экшн-камеры" width="200" height="200">
+							<p>Экшн-камеры</p>
+						</a>
+					</div>
+					<div class="popular-item">
+						<a href="#">
+							<img src="img/" alt="Фитнес-браслеты" width="200" height="200">
+							<p>Фитнес-браслеты</p>
+						</a>
+					</div>
+					<div class="popular-item">
+						<a href="#">
+							<img src="img/" alt="Умные часы" width="200" height="200">
+						</a>
+						<p>Умные часы
+						</p>
+					</div>
+					<div class="popular-item">
+						<a href="#">
+							<img src="img/" alt="Квадрокоптеры" width="200" height="200">
+							<p>Квадрокоптеры</p>
+						</a>
+					</div>
+				</div>
 			</section>
 			
 <!--СЕРВИСЫ-->			
 			<section class="services-section">
 				<h2 class="visually-hidden">Сервисы</h2>
-				<div class="services-list-box">
-					<div class="services-slider-controls">
-						<label for="slide-1">
-							<input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Кредит" checked>Доставка
-						</label>
-						<label for="slide-2">
-							<input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Кредит">Гарантия
-						</label>
-						<label for="slide-3">
-							<input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">Кредит
-						</label>
+				<div class="services-box">
+					<label>
+						<input class="services-item line-feature" type="radio" name="point" id="slide-1">Доставка
+					</label>
+					<label>
+						<input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Гарантия">Гарантия
+					</label>					
+					<label>
+						<input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">Кредит
+					</label>
+					<div class="services-in-box" title="delivery">
+						<h3 id="delivery">Доставка</h3>
+						<p>
+							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+						</p>
 					</div>
-					<div class="slider-services-description">
-						<div class="slides slide-1" title="delivery">
-							<h3 id="delivery">Доставка</h3>
-							<p>
-								Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-							</p>
-						</div>
-						<div class="slides slide-2" title="safeguard">
-							<h3 id="safeguard">Гарантия</h3>
-							<p>
-								Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-								Товар, не дом, конечно же.
-							</p>
-						</div>
-						<div class="slides slide-3" title="credit">
-							<h3 id="credit">Кредит</h3>
-							<p>
-								Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
-								условия кредита. Выгодные для нашего банка, разумеется.
-							</p>
-						</div>
+					<div class="services-in-box" title="safeguard">
+						<h3 id="safeguard">Гарантия</h3>
+						<p>
+							Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+							Товар, не дом, конечно же.
+						</p>
+					</div>
+					<div class="services-in-box" title="credit">
+						<h3 id="credit">Кредит</h3>
+						<p>
+							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+							условия кредита. Выгодные для нашего банка, разумеется.
+						</p>
 					</div>	
 				</div>
 			</section>
@@ -222,7 +244,10 @@
 			<section class="logotypes-section">
 				<h2 class="visually-hidden">Спонсоры</h2>
 				<figure>
-					<img  src="img/spon.jpg" width="200" height="200" alt="Спонсоры">
+					<img  src="img/logo-1c.jpg" width="260" height="100" alt="Dji">
+					<img  src="img/logo-2c.jpg" width="260" height="100" alt="SpGadgets">
+					<img  src="img/logo-3c.jpg" width="260" height="100" alt="GoPto">
+					<img  src="img/logo-4c.jpg" width="260" height="100" alt="Vive">
 				</figure>	
 			</section>
 			
@@ -249,7 +274,7 @@
 				<p>
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
-				<a class="map-btn" href="#"><img src="img/map.jpg" width="200" height="200" alt="Карта"></a>
+				<a class="map-btn" href="#"><img src="img/map.png" width="560" height="222" alt="Карта"></a>
 				<a class="line-feature">Напишите нам</a>	
 			</section>
 		</main>
@@ -260,7 +285,7 @@
 			
 			<section class="footer-user-section">
 				<div class="footer-logotype">
-					<a class="footer-logo" href="#"><img src="img/logo.jpg" width="200" height="200" alt="Логотип"></a>
+					<a class="footer-logo" href="#"><img src="img/f-logo.png" width="163" height="36" alt="Логотип"></a>
 				</div>
 				<div class="">
 					<ul class="footer-user-nav">
@@ -311,16 +336,19 @@
 				<form class="feedback-form" method="post">
 					<span class="feedback-modal-close">x</span>
 					<div class="feedback-form-group feedback-form-group-left-part">
-						<label for="fullname"><b>Ваше имя:</b></label>
-						<input type="text" name="fullname" id="fullname" placeholder="Имя Фамилия">
+						<label><b>Ваше имя:</b>
+							<input type="text" name="fullname" placeholder="Имя Фамилия" required>
+						</label>
 					</div>
 					<div class="feedback-form-group feedback-form-group-right-part">
-						<label for="email"><b>Ваш e-mail:</b></label>
-						<input type="text" name="email" id="email" placeholder="email@example.com">
+						<label><b>Ваш e-mail:</b>
+							<input type="email" name="email" placeholder="email@example.com" required>
+						</label>
 					</div>
 					<div class="feedback-form-group">
-						<label for="message"><b>Текст письма:</b></label>
-						<textarea name="message" id="message" placeholder="В свободной форме" rows="10" cols="10"></textarea>
+						<label><b>Текст письма:</b>
+							<textarea name="message" placeholder="В свободной форме" rows="5" cols="50" required></textarea>
+						</label>
 					</div>
 					<input class="btn line-feature" type="submit"  value="Отправить">
 				</form>
@@ -331,6 +359,7 @@
 				<h2 class="visually-hidden">Карта</h2>
 				<figure>
 					<span class="map-modal-close">x</span>
+					<img src="img/map-big.png" width="960" height="559" alt="Карта">
 				</figure>	
 			</section>
 	</body>
