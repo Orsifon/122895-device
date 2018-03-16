@@ -3,20 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Device</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 <!--ШАПКА-->
 		<header class="main-header">
-			<a href="#" class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
+			<a class="logo"><img src="img/logo.png" width="164" height="36" alt="Логотип Device"></a>	
 			<h1 class="visually-hidden">Магазин "Девайс"</h1>
 <!--ПОИСК_ВХОД-->			
-			<section class="user-nav-section">
+			<section class="user-section">
 				<h2  class="visually-hidden">Поиск по сайту</h2>
 				<div class="user-search">
 					<label class="visually-hidden" for="nav-search">Поиск по сайту</label>
 					<input type="search" name="search" id="nav-search" placeholder="Поиск по сайту">
-					<button class="btn-search-hidden" aria-label="">Найти</button>
+					<button class="btn-search-hidden" aria-label="Кнопка поиска">Найти</button>
 				</div>
 				<div class="user-nav">
 					<div class="user-nav-login">
@@ -32,30 +34,35 @@
 <!--НАВИГАЦИЯ-->			
 			<section class="main-nav-section">
 				<h2 class="visually-hidden">Навигация</h2>			
-				<nav class="dropdown-menu">
-					<a class="menu-goods">Каталог товаров</a>
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
-						<li class="sub-menu-item"><a href="#2">Моноподы для селфи</a></li>
-						<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
-					</ul>	
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
-						<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+				<nav class="navigation" aria-label="Навигация по сайту">	
+					<ul class="nav-menu">
+						<li class="nav menu-catalog"><a href="#">Каталог товаров</a>
+							<ul class="dropdown-menu">
+								<li class="sub-menu">
+									<ul>
+										<li class="sub-menu-item"><a href="#1">Виртуальная реальность</a></li>
+										<li class="sub-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
+										<li class="sub-menu-item"><a href="#3">Экшн-камеры</a></li>
+									</ul>
+								</li>	
+								<li class="sub-menu">
+									<ul>
+										<li class="sub-menu-item"><a href="#4">Фитнес-браслеты</a></li>
+										<li class="sub-menu-item"><a href="#5">Умные часы</a></li>
+									</ul>
+								</li>
+								<li class="sub-menu">
+									<ul>
+										<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav nav-delivery"><a href="#">Доставка</a></li>
+						<li class="nav nav-safeguard"><a href="#">Гарантии</a></li>
+						<li class="nav nav-contacts"><a href="#">Контакты</a></li>
 					</ul>
-					<ul class="sub-menu">
-						<li class="sub-menu-item"><a href="#6">Квадрокоптеры</a></li>
-					</ul>
-				</nav>
-				<nav class="main-nav-wrapper">
-					<div class="nav-delivery-safeguard">
-						<a href="#">Доставка</a>
-						<a href="#">Гарантии</a>
-					</div>
-					<div class="nav-contacts">
-						<a href="#">Контакты</a>
-					</div>
-				</nav>
+				</nav>  
 			</section>
 		</header>
 		
@@ -66,9 +73,9 @@
 			<section class="main-slider-section">
 				<h2 class="visually-hidden">Популярные товары</h2>		
 				<div class="main-slider-box">
-					<input class="hidden_radio" type="radio" name="radio-slider" id="monopod" checked>
-					<input class="hidden_radio" type="radio" name="radio-slider" id="fitbracelet">			
-					<input class="hidden_radio" type="radio" name="radio-slider" id="quadrocopter">
+					<input class="hidden_radio" type="radio" name="radio-slider" id="monopod" aria-label="Монопод" checked>
+					<input class="hidden_radio" type="radio" name="radio-slider" id="fitbracelet" aria-label="Фитнес-браслет">			
+					<input class="hidden_radio" type="radio" name="radio-slider" id="quadrocopter" aria-label="Квадрокоптер">
 			<!--#1-->  
 					<div class="slides slider-item" title="Монопод">	
 						<div class="slider-image">
@@ -84,7 +91,7 @@
 								Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
 							</p>
 							<div class="slider-wrapper">
-								<a href="#" class="">Подробнее</a>
+								<a href="#" class="" aria-label="Подробнее о моноподе">Подробнее</a>
 								<div class="slider-button">
 									<label class="pseudo_radio" for="monopod">Монопод</label>
 									<label class="pseudo_radio" for="fitbracelet">Фитнес-браслет</label>
@@ -120,7 +127,7 @@
 								не пропускать занятия и соблюдать диету.
 							</p>
 							<div class="slider-wrapper">
-								<a href="#" class="">Подробнее</a>
+								<a href="#" class="" aria-label="Подробнее о Фитнес-браслете">Подробнее</a>
 								<div class="slider-button">
 									<label class="pseudo_radio" for="monopod">Монопод</label>
 									<label class="vpseudo_radio" for="fitbracelet">Фитнес-браслет</label>
@@ -136,7 +143,7 @@
 								</tr>
 							</table>
 						</div>
-					</div>	
+					</div>
 			<!--#3-->           
 					<div class="slides slider-item" title="Квадрокоптер">	
 						<div class="slider-image">
@@ -152,7 +159,7 @@
 								мощным лазером, замаскированным под стандартную камеру.
 							</p>
 							<div class="slider-wrapper">
-								<a href="#" class="">Подробнее</a>
+								<a href="#" class="" aria-label="Подробнее о Квадрокоптере">Подробнее</a>
 								<div class="slider-button">
 									<label class="pseudo_radio" for="monopod">Монопод</label>
 									<label class="pseudo_radio" for="fitbracelet">Фитнес-браслет</label>
@@ -233,13 +240,13 @@
 			<section class="services-section">
 				<h2 class="visually-hidden">Сервисы</h2>
 				<div class="services-box">
-					<input class="services-item line-feature" type="radio" name="point" id="slide-1" value="Доставка">
-					<input class="services-item line-feature" type="radio" name="point" id="slide-2" value="Гарантия">
-					<input class="services-item line-feature" type="radio" name="point" id="slide-3" value="Кредит">
+					<input class="services-item visually-hidden" type="radio" name="point" id="slide-1" value="Доставка" checked>
+					<input class="services-item visually-hidden" type="radio" name="point" id="slide-2" value="Гарантия">
+					<input class="services-item visually-hidden" type="radio" name="point" id="slide-3" value="Кредит">
 					<div class="slider-point">
-						<label for="slide-1">Доставка</label>
-						<label for="slide-2">Гарантия</label>
-						<label for="slide-3">Кредит</label>
+						<label for="slide-1" class="line-feature">Доставка</label>
+						<label for="slide-2" class="line-feature">Гарантия</label>
+						<label for="slide-3" class="line-feature">Кредит</label>
 					</div>			
 					<div class="services-in-box" title="delivery">
 						<h3 id="delivery">Доставка</h3>
@@ -265,22 +272,22 @@
 			</section>
 			
 <!--СПОНСОРЫ-->			
-			<section class="logotypes-section">
+			<section class="brands">
 				<h2 class="visually-hidden">Спонсоры</h2>
-				<div class="logotypes">
-					<a href="#" alt="Dji">
+				<div class="brands-logotypes">
+					<a href="#">
 						<img  src="img/logo-1c.jpg" width="260" height="100" alt="Dji">
 						<img  src="img/logo-1wb.jpg" width="260" height="100" alt="Dji">
 					</a>
-					<a href="#" alt="SpGadgets"> 
+					<a href="#"> 
 						<img  src="img/logo-2c.jpg" width="260" height="100" alt="SpGadgets">
 						<img  src="img/logo-2wb.jpg" width="260" height="100" alt="SpGadgets">
 					</a>
-					<a href="#" alt="GoPto">
-						<img  src="img/logo-3c.jpg" width="260" height="100" alt="GoPto">
-						<img  src="img/logo-3wb.jpg" width="260" height="100" alt="GoPto">
+					<a href="#">
+						<img  src="img/logo-3c.jpg" width="260" height="100" alt="GoPro">
+						<img  src="img/logo-3wb.jpg" width="260" height="100" alt="GoPro">
 					</a>
-					<a href="#" alt="Vive">
+					<a href="#">
 						<img  src="img/logo-4c.jpg" width="260" height="100" alt="Vive">
 						<img  src="img/logo-4wb.jpg" width="260" height="100" alt="Vive">
 					</a>
@@ -310,18 +317,17 @@
 				<p>
 					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
 				</p>
-				<a class="map-btn" href="#"><img src="img/map.png" width="560" height="222" alt="Карта"></a>
+				<a class="map-btn" href="#"><img src="img/map.png" width="560" height="222" alt="Открытие модального окна"></a>
 				<a href="#" class="line-feature">Напишите нам</a>	
 			</section>
 		</main>
 		
 <!--ПОДВАЛ-->		
 		<footer class="main-footer">
-			<h2 class="visually-hidden">Контактная информация</h2>
-			<section class="footer-user-section">
-				<h3 class="visually-hidden">Корзина</h3>
+			<section class="footer-user">
+				<h2 class="visually-hidden">Для пользователя</h2>
 				<div class="footer-logotype">
-					<a class="footer-logo" href="#"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
+					<a class="footer-logo"><img src="img/f-logo.png" width="163" height="36" alt="Логотип Device"></a>
 				</div>
 				<ul class="footer-user-nav">
 					<li class="login-link"><a class="visually-hidden" href="#">Войти</a></li>
@@ -330,9 +336,8 @@
 					<li class="login-link"><a href="#">Корзина</a></li>
 				</ul>	
 			</section >
-			
-			<section class="footer-nav-section">
-				<h3 class="visually-hidden">Адрес</h3>
+			<section class="footer-conditions">
+				<h2 class="visually-hidden">Условия покупки</h2>
 				<div class="footer-address">
 					<p>г. Москва, ул. Строителей, 15</p>	
 				</div>
@@ -345,18 +350,16 @@
 					<p>Тел: +7(495)495-95-95</p>
 				</div>
 			</section>
-			
-			<section class="footer-socials-section">
-				<h3 class="visually-hidden">Соц.сети</h3>
-				<div></div>
-				<ul class="footer-socials">
-					<li><a class="social-icon social-icon-vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
-					<li><a class="social-icon social-icon-fb" href="#" aria-label="Фейсбук">Фейсбук</a></li>
-					<li><a class="social-icon social-icon-inst" href="#" aria-label="Инстаграм">Инстаграм</a></li>
+			<section class="footer-socials">
+				<h2 class="visually-hidden">Мы в соцсетях</h2>
+				<ul class="socials-buttons">
+					<li><a class="social-icon social-btn-facebook" href="#">Facebook</a></li>
+					<li><a class="social-icon social-btn-instagram" href="#">Instagram</a></li>
+					<li><a class="social-icon social-btn-twitter" href="#">Twitter</a></li>
 				</ul>
 				<div class="footer-copyright">
-					<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-							<span class="logo-html">HTML Academy</span>
+					<a href="https://htmlacademy.ru/intensive/htmlcss">
+						<span class="logo-html">HTML Academy</span>
 					</a>
 				</div>
 			</section>	
@@ -365,16 +368,16 @@
 <!--ФОРМА ОБРАТНОЙ СВЯЗИ-->			
 			<section class="feedback">
 				<h2 class="visually-hidden">Форма обратной связи</h2>
-				<form class="feedback-form" action="https//:echo.htmlacademy.ru" method="post">
+				<form class="feedback-form" action="#" method="post">
 					<button class="feedback-modal-close" aria-label="Закрыть форму обратной связи" type="button">Закрыть</button>
 					<div class="feedback-form-group form-group-left">
 						<label><b>Ваше имя:</b>
-							<input type="text" name="fullname" placeholder="Имя Фамилия" required>
+							<input type="text" name="fullname" placeholder="Имя Фамилия"  aria-label="Введите ваше имя" required>
 						</label>
 					</div>
 					<div class="feedback-form-group form-group-right">
 						<label><b>Ваш e-mail:</b>
-							<input type="email" name="email" placeholder="email@example.com" required>
+							<input type="email" name="email" placeholder="email@example.com" aria-label="Введите ваш email" required>
 						</label>
 					</div>
 					<div class="feedback-form-group">
@@ -382,14 +385,14 @@
 							<textarea name="message" placeholder="В свободной форме" rows="5" cols="50" required></textarea>
 						</label>
 					</div>
-					<input class="btn line-feature" type="submit" value="Отправить">
+					<input class="btn line-feature" type="submit" value="Отправить" aria-label="Отправить форму">
 				</form>
 			</section>
 			
 <!--КАРТА-->			
 			<section class="map-popular">
 				<h2 class="visually-hidden">Карта</h2>
-				<button class="map-modal-close" aria-label="Закрыть карту" type="button">Закрыть</button>
+				<button class="map-modal-close" aria-label="Закрыть модальное окно с картой" type="button">Закрыть</button>
 				<p>
 					<img src="img/map-big.png" width="960" height="559" alt="Как до нас добраться">
 				</p>	
